@@ -1,15 +1,14 @@
-body{
+@import url("https://fonts.googleapis.com/css?family=B612+Mono|Roboto+Mono&display=swap");
+
+body {
   margin: 0;
-  font-family: "Cascadia Code", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "Roboto Mono";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  font-family: "B612 Mono";
 }
 
 .App {
