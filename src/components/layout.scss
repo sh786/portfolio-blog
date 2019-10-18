@@ -1,0 +1,122 @@
+body{
+  margin: 0;
+  font-family: "Cascadia Code", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav {
+  position: absolute;
+  z-index: 20;
+  background-color: #455357;
+  color: #fff;
+  width: 100%;
+  text-align: right;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+}
+
+.cover-flex {
+  background-color: #09d3ac;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #455357;
+
+  .links {
+    position: absolute;
+    bottom: 2em;
+  }
+}
+
+a.coverIcon {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  color: #455357;
+  text-decoration: none;
+
+  .icon-label {
+    display: block;
+    font-size: 0.5em;
+  }
+
+  * {
+    cursor: pointer;
+  }
+}
+
+a.coverIcon:hover {
+  transform: translateY(-2px);
+}
+
+.works-flex {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #09d3ac;
+
+  .work {
+    flex: 1 0 26%;
+    padding: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 33vw;
+
+    .work-image {
+      max-width: 10em;
+    }
+
+    .work-info {
+      color: #000;
+      font-size: 0.6em;
+    }
+
+    .work-techs {
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        * {
+          margin-left: 0.2em;
+          margin-right: 0.2em;
+        }
+
+        span {
+          font-size: 0.6em;
+        }
+      }
+    }
+  }
+}
