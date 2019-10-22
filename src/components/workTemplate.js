@@ -45,6 +45,15 @@ const WorkTemplate = () => {
                     <FontAwesomeIcon icon={faReact} size="1x" />
                   </label>
                 ) : null}
+                {work.node.frontmatter.techs.includes("d3.js") ? (
+                  <label>
+                    <img
+                      src="../images/d3.svg"
+                      alt="d3.js"
+                      className="custom-logo"
+                    />
+                  </label>
+                ) : null}
               </p>
             </div>
             <div className="work-links">
