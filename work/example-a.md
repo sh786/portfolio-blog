@@ -1,10 +1,13 @@
 ---
-title: Example A
-date: 2019-10-22T18:14:35.872Z
-info: Example A project info
-githubUrl: 'https://github.com/sh786/gats-start'
-imageUrl: 'https://create-react-app.dev/img/logo.svg'
-liveUrl: sam-hamburger.netlify.com
-techs: react
+title: PittHomes
+date: 2018-04-16T18:14:35.872Z
+info: >-
+  Dynamic Home Buying Tool for city of Pittsburgh based on a dataset from
+  Zillow.com. Due to the expiration of Google Maps API key, the map may appear
+  "For development purposes only."
+githubUrl: 'https://github.com/sh786/info4310hw4'
+imageUrl: 'https://sam-hamburger.netlify.com/assets/pitthomes.png'
+liveUrl: 'http://pitthomes.surge.sh/'
+techs: d3.js
 ---
 
