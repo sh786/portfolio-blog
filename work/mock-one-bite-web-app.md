@@ -5,7 +5,7 @@ info: >-
   Mini-exercise to mockup a responsive One Bite Pizza data-driven site (nav and
   carousel).
 githubUrl: 'https://github.com/sh786/bs-one-bite-exercise'
-imageUrl: one-bite.png
+imageUrl: ob-logo-horiztonal.png
 liveUrl: 'https://zfny3.csb.app/restaurants'
 techs: react
 ---
