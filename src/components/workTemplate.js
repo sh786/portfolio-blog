@@ -48,7 +48,7 @@ const WorkTemplate = () => {
                 {work.node.frontmatter.techs.includes("d3.js") ? (
                   <label>
                     <img
-                      src="../images/d3.svg"
+                      src="https://sam-hamburger.netlify.com/assets/d3.svg"
                       alt="d3.js"
                       className="custom-logo"
                     />
