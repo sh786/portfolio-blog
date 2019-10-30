@@ -30,11 +30,13 @@ const WorkTemplate = () => {
       {allMarkdownRemark.edges.map((work, i) => {
         return (
           <div className="work">
-            <img
-              src={work.node.frontmatter.imageUrl}
-              alt={work.node.frontmatter.title}
-              className="work-image"
-            />
+            <div className="work-image-wrapper">
+              <img
+                src={work.node.frontmatter.imageUrl}
+                alt={work.node.frontmatter.title}
+                className="work-image"
+              />
+            </div>
             <h3>{work.node.frontmatter.title}</h3>
             <p className="work-info">{work.node.frontmatter.info}</p>
             <div className="work-techs">
