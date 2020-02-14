@@ -16,7 +16,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Sam Hamburger - Portfolio" />
       <div className="App">
         <div className="cover-flex">
           <h1>Sam Hamburger</h1>
