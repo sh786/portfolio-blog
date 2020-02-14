@@ -6,7 +6,7 @@ info: >-
   carousel).
 githubUrl: 'https://github.com/sh786/bs-one-bite-exercise'
 imageUrl: 'https://sam-hamburger.netlify.com/assets/ob-logo-horiztonal.png'
-liveUrl: 'https://zfny3.csb.app/restaurants'
+liveUrl: 'https://sh786.github.io/bs-one-bite-exercise/'
 techs: react
 ---
 
