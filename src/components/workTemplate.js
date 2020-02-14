@@ -29,7 +29,7 @@ const WorkTemplate = () => {
     <div className="works-flex">
       {allMarkdownRemark.edges.map((work, i) => {
         return (
-          <div className={"work " + (i % 2 !== 0 && "oddWork")}>
+          <div className="work">
             <div className="work-image-wrapper">
               <img
                 src={work.node.frontmatter.imageUrl}
