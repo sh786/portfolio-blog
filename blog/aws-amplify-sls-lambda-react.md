@@ -3,6 +3,7 @@ title: "AWS Amplify - Serverless Functions for External Data with Modern UI Fron
 date: 2020-02-19
 path: "/blog/aws-amplify-serverless-lambda-react"
 tags: ["react", "serverless", "amplify", "lambda", "aws"]
+imageUrl: "https://sam-hamburger.netlify.com/assets/aws-amplify-sls-lambda-react.jpg"
 devCommUrl: "https://dev.to/sh786/aws-amplify-serverless-functions-for-external-data-with-modern-ui-frontend-react-angular-vue-3dl9"
 ---
 

@@ -24,6 +24,12 @@ export default function Template({
           <FontAwesomeIcon icon={faHandPointLeft} /> return to blog home.
         </AniLink>
         <div className="blog-post">
+          <div className="blog-post-cover">
+            <img
+              src={frontmatter.imageUrl}
+              alt={frontmatter.title + " cover photo"}
+            />
+          </div>
           <h1>{frontmatter.title}</h1>
           <h2 className="date">
             {frontmatter.date} • {timeToRead} min •{" "}
@@ -51,6 +57,7 @@ export const pageQuery = graphql`
         path
         tags
         title
+        imageUrl
       }
       timeToRead
     }
