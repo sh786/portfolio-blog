@@ -16,3 +16,14 @@ collections:
       - { name: imageUrl, label: ImageUrl }
       - { name: liveUrl, label: LiveUrl }
       - { name: techs, Label: Techs }
+  - name: blogPost
+    label: BlogPost
+    folder: blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: path, label: Path }
+      - { name: tags, label: Tags }
+      - { name: date, label: Date, widget: datetime }
+      - { name: devCommUrl, label: DevCommUrl }
+      - { name: content, label: Content, widget: markdown }

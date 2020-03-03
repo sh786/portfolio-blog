@@ -123,6 +123,80 @@ a.coverIcon:hover {
   }
 }
 
+.link-style {
+  color: #09d3ac;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    font-weight: 700;
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.blog-layout {
+  background-color: #fff;
+  height: 100vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  overflow: scroll;
+}
+
+.blog-header {
+  background-color: #fff;
+  margin-top: 30px;
+  color: #455357;
+}
+
+.blog-list-item {
+  color: #455357;
+  text-decoration: none;
+
+  &-outline {
+    border: 1px solid #09d3ac;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+}
+
+.blog-post-container {
+  background-color: #fff;
+  color: #455357;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  overflow: scroll;
+
+  .blog-post {
+    margin-top: 30px;
+    border: 1px solid #09d3ac !important;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .date {
+      font-size: 14px;
+      color: gray;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  background-color: #455357;
+  color: #fff;
+  padding: 5px;
+}
+
+.react-color {
+  color: #09d3ac;
+}
+
 @media (max-width: 400px) {
   .work {
     max-width: 80%;

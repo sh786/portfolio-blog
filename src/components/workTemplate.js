@@ -8,7 +8,7 @@ import { faGithub, faReact } from "@fortawesome/free-brands-svg-icons"
 const WorkTemplate = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(work)/" } }) {
         edges {
           node {
             frontmatter {
