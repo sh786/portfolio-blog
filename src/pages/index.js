@@ -1,7 +1,8 @@
-import React, { useRef } from "react"
+import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase, faBlog } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,13 +10,9 @@ import Footer from "../components/footer"
 import WorkTemplate from "../components/workTemplate"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const scrollToRef = ref =>
-  window.scrollTo({ top: ref.current.offsetTop, behavior: "smooth" })
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 
 const IndexPage = () => {
-  const myRef = useRef(null)
-  const executeScroll = () => scrollToRef(myRef)
-
   return (
     <Layout>
       <SEO title="Sam Hamburger - Portfolio" />
@@ -24,7 +21,7 @@ const IndexPage = () => {
           <h1>Sam Hamburger</h1>
           <h4>New York, NY</h4>
           <div className="links">
-            <a className="works coverIcon" onClick={executeScroll}>
+            <a className="works coverIcon" onClick={() => scrollTo("#works")}>
               <label>
                 <FontAwesomeIcon icon={faBriefcase} size="2x" />
                 <span className="icon-label">works</span>
@@ -60,7 +57,7 @@ const IndexPage = () => {
             </AniLink>
           </div>
         </div>
-        <div ref={myRef}>
+        <div id="works">
           <WorkTemplate />
         </div>
         <Footer />

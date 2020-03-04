@@ -85,6 +85,7 @@ module.exports = {
         showSpinner: false,
       },
     },
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sitemap`,
     "gatsby-plugin-robots-txt",
     {
