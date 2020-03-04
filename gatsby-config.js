@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    siteUrl: "https://sam-hamburger.netlify.com",
+    title: `Sam Hamburger Portfolio & Blog`,
+    description: `Welcome to Sam Hamburger's Portfolio and Blog site. Explore example works as well as the new blog section.`,
+    author: `Sam Hamburger`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,6 +44,20 @@ module.exports = {
       options: {
         name: `scss`,
         path: `${__dirname}/src/components/layout.scss`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto Mono`,
+            variants: [`400`, `500`, `700`],
+          },
+          {
+            family: `B612 Mono`,
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,
