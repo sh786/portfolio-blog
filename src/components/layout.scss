@@ -179,6 +179,17 @@ a.coverIcon:hover {
     padding-left: 20px;
     padding-right: 20px;
 
+    .blog-post-cover {
+      margin-left: -20px;
+      margin-right: -20px;
+
+      img {
+        max-width: 100%;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+      }
+    }
+
     .date {
       font-size: 14px;
       color: gray;

@@ -70,8 +70,19 @@ module.exports = {
         showSpinner: false,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-robots-txt",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Sam Hamburger Portfolio & Blog`,
+        short_name: `Sam Hamburger Portfolio`,
+        start_url: `/`,
+        background_color: `#09d3ac`,
+        theme_color: `#455357`,
+        display: `standalone`,
+      },
+    },
+    "gatsby-plugin-offline",
   ],
 }
