@@ -164,8 +164,8 @@ a.coverIcon:hover {
 .blog-post-container {
   background-color: #fff;
   color: #455357;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
   overflow: scroll;
@@ -191,6 +191,13 @@ a.coverIcon:hover {
     .date {
       font-size: 14px;
       color: gray;
+    }
+
+    .blog-post-content {
+      font-family: "Montserrat";
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
     }
   }
 }

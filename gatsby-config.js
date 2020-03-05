@@ -57,6 +57,9 @@ module.exports = {
           {
             family: `B612 Mono`,
           },
+          {
+            family: `Montserrat`,
+          },
         ],
       },
     },
