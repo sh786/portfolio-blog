@@ -23,7 +23,7 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
-      - { name: tags, label: Tags }
+      - { name: tags, label: Tags, widget: list }
       - { name: date, label: Date, widget: datetime }
       - { name: devCommUrl, label: DevCommUrl }
       - { name: content, label: Content, widget: markdown }
