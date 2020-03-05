@@ -21,7 +21,7 @@ export default function Template({
           direction="right"
           className="link-style"
         >
-          <FontAwesomeIcon icon={faHandPointLeft} /> return to blog home.
+          <FontAwesomeIcon icon={"hand-point-left"} /> return to blog home.
         </AniLink>
         <div className="blog-post">
           <div className="blog-post-cover">

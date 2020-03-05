@@ -4,9 +4,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHandPointLeft } from "@fortawesome/free-solid-svg-icons"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faHandPointLeft } from "@fortawesome/free-solid-svg-icons"
+
+library.add(faHandPointLeft)
 
 const Blog = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
@@ -39,7 +42,8 @@ const Blog = () => {
             direction="right"
             className="link-style"
           >
-            <FontAwesomeIcon icon={faHandPointLeft} /> return to portfolio home.
+            <FontAwesomeIcon icon={"hand-point-left"} /> return to portfolio
+            home.
           </AniLink>
 
           <div className="blog-header">
