@@ -1,14 +1,19 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBriefcase, faBlog } from "@fortawesome/free-solid-svg-icons"
+import {
+  faBriefcase,
+  faBlog,
+  faFileAlt,
+} from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import WorkTemplate from "../components/workTemplate"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import resume from "../../static/assets/samsonhamburgerresume-master.pdf"
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 
@@ -45,6 +50,12 @@ const IndexPage = () => {
               <label>
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 <span className="icon-label">linkedin</span>
+              </label>
+            </a>
+            <a href={resume} className="coverIcon" target="_blank">
+              <label>
+                <FontAwesomeIcon icon={faFileAlt} size="2x" />
+                <span className="icon-label">resume</span>
               </label>
             </a>
             <AniLink to="/blog" swipe top="entry" direction="left">

@@ -12,6 +12,7 @@ const Footer = () => {
         <FontAwesomeIcon className="react-color" icon={faReact} /> and{" "}
         <img src={GatsbyIcon} height={13} />.
       </p>
+      <p>P: (978)-888-4502 • E: sh786@cornell.edu</p>
     </div>
   )
 }
