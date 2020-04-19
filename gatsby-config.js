@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://sam-hamburger.netlify.com",
-    title: `Sam Hamburger Portfolio & Blog`,
+    siteUrl: "https://sam-hamburger.netlify.app",
+    title: `Sam Hamburger`,
     description: `Welcome to Sam Hamburger's Portfolio and Blog site. Explore example works as well as the new blog section.`,
     author: `Sam Hamburger`,
   },

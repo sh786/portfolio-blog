@@ -4,6 +4,7 @@ import {
   faBriefcase,
   faBlog,
   faFileAlt,
+  faPlane,
 } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -11,6 +12,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Drone from "../components/drone"
 import Footer from "../components/footer"
 import WorkTemplate from "../components/workTemplate"
 import resume from "../../static/assets/samsonhamburgerresume-master.pdf"
@@ -20,7 +22,7 @@ const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Sam Hamburger - Portfolio" />
+      <SEO title="Portfolio | Sam Hamburger" />
       <div className="App">
         <div className="cover-flex">
           <h1>Sam Hamburger</h1>
@@ -30,6 +32,15 @@ const IndexPage = () => {
               <label>
                 <FontAwesomeIcon icon={faBriefcase} size="2x" />
                 <span className="icon-label">works</span>
+              </label>
+            </a>
+            <a
+              className="drone-link coverIcon"
+              onClick={() => scrollTo("#drone")}
+            >
+              <label>
+                <FontAwesomeIcon icon={faPlane} size="2x" />
+                <span className="icon-label">drone</span>
               </label>
             </a>
             <a
@@ -70,6 +81,9 @@ const IndexPage = () => {
         </div>
         <div id="works">
           <WorkTemplate />
+        </div>
+        <div id="drone">
+          <Drone />
         </div>
         <Footer />
       </div>

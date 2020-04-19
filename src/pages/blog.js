@@ -34,7 +34,7 @@ const Blog = () => {
     <>
       <div className="blog-layout">
         <Layout>
-          <SEO title="Blog" />
+          <SEO title="Blog | Sam Hamburger" />
           <AniLink
             to="/"
             swipe
