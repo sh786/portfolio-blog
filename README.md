@@ -1,6 +1,4 @@
-## Sam Hamburger's Portfolio and Blog
-
-A little info about your project and/ or overview that explains **what** the project is about.
+# Sam Hamburger's Portfolio and Blog
 
 ## Motivation
 
