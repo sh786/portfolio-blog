@@ -22,7 +22,7 @@ const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Portfolio | Sam Hamburger" />
+      <SEO title="Portfolio" />
       <div className="App">
         <div className="cover-flex">
           <h1>Sam Hamburger</h1>

@@ -276,7 +276,7 @@ a.coverIcon:hover {
   color: #09d3ac;
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-device-width: 480px) {
   .work {
     max-width: 80%;
     margin-top: 4%;
@@ -296,8 +296,12 @@ a.coverIcon:hover {
     transition: all 0.25s ease-in-out;
   }
 
+  .drone {
+    flex-direction: column;
+  }
+
   .drone-item {
-    max-width: 80%;
+    width: 80%;
     margin-top: 4%;
     margin-bottom: 4%;
   }
