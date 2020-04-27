@@ -95,6 +95,13 @@ a.coverIcon:hover {
     align-items: center;
     justify-content: center;
 
+    .work-image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 170px;
+    }
+
     .work-image {
       max-width: 10em;
     }
@@ -120,8 +127,8 @@ a.coverIcon:hover {
         }
 
         .custom-logo {
-          width: 1.262em;
-          height: 1.262em;
+          width: 1em;
+          height: 1em;
         }
       }
     }
