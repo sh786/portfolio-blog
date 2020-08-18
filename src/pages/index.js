@@ -7,6 +7,8 @@ import {
   faPlane,
 } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -16,6 +18,7 @@ import Drone from "../components/drone"
 import Footer from "../components/footer"
 import WorkTemplate from "../components/workTemplate"
 import resume from "../../static/assets/samsonhamburgerresume-master.pdf"
+config.autoAddCss = false
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop)
 
